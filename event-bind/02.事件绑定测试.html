@@ -1,0 +1,39 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: by_mori
+ * @Date: 2021-09-27 20:21:38
+ * @LastEditors: by_mori
+ * @LastEditTime: 2021-09-27 20:58:45
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>事件绑定测试</title>
+  </head>
+  <body>
+    <ul id="items">
+      <li>AAA1</li>
+      <li>AAA2</li>
+      <li>AAA3</li>
+      <li>AAA4</li>
+      <div>EEEEE</div>
+    </ul>
+    <script src="../src/event-bind/index.js"></script>
+    <script>
+      const ul = document.querySelector('ul');
+      addEventListene(
+        '#items',
+        'click',
+        function (event) {
+          // alert(this.innerHTML)
+          alert(event.target.innerHTML);
+        },
+        'li'
+      );
+    </script>
+  </body>
+</html>

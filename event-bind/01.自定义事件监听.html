@@ -1,0 +1,58 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: by_mori
+ * @Date: 2021-09-27 20:08:26
+ * @LastEditors: by_mori
+ * @LastEditTime: 2021-09-27 20:19:12
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>自定义事件监听</title>
+    <script src="../src/event-bind/index.js"></script>
+    <style>
+      #outer {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        background-color: pink;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #inner {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div id="inner"></div>
+    </div>
+    <script>
+      //获取元素
+      let outer = document.querySelector('#outer');
+      let inner = document.querySelector('#inner');
+
+      outer.addEventListener('click',function(){
+          console.log('捕获 outer-1');
+      },true)
+      inner.addEventListener('click',function(){
+          console.log('捕获 inner-1');
+      },true)
+      outer.addEventListener('click',function(){
+          console.log('冒泡 outer-2');
+      })
+      inner.addEventListener('click',function(){
+          console.log('冒泡 inner-2');
+      })
+    </script>
+  </body>
+</html>
