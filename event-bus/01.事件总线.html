@@ -1,0 +1,43 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: by_mori
+ * @Date: 2021-09-27 21:01:23
+ * @LastEditors: by_mori
+ * @LastEditTime: 2021-09-27 21:19:46
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>事件总线</title>
+    <script src="../src/event-bus/index.js"></script>
+  </head>
+  <body>
+    <script>
+      // eventBus
+      eventBus.on('login', (data) => {
+        console.log(data + '用户已登录');
+      });
+      eventBus.on('login', (data) => {
+        console.log(data + '登录数据已写入');
+      });
+      eventBus.on('logout', (data) => {
+        console.log(data + '退出登录');
+      });
+
+      //触发事件
+      setTimeout(() => {
+        eventBus.emit('login', '沫沫');
+      }, 100);
+
+      //解绑事件
+      eventBus.off('login');
+      // eventBus.off()
+
+      console.log(eventBus);
+    </script>
+  </body>
+</html>
