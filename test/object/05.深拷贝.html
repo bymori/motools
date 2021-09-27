@@ -1,0 +1,71 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: by_mori
+ * @Date: 2021-09-27 18:16:48
+ * @LastEditors: by_mori
+ * @LastEditTime: 2021-09-27 18:47:24
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>深拷贝</title>
+    <script src="../../src/object/deepClone.js"></script>
+  </head>
+  <body>
+    <script>
+      const obj = {
+        a: 1,
+        b: ['e', 'f', 'g'],
+        c: { h: 20 },
+        d: function () {},
+      };
+
+      obj.b.push(obj.c);
+      obj.c.j = obj.b;
+
+      //4.循环引用效率增强
+      const result = deepClone4(obj);
+      result.c.h = 200;
+
+      console.log(obj);
+      console.log(result);
+
+      //3. 解决循环引用问题
+      /* const result = deepClone3(obj);
+      result.c.h = 200;
+
+      console.log(obj);
+      console.log(result); */
+
+      //2.递归拷贝
+      /*const result = deepClone2(obj);
+      result.c.h = 200;
+
+      console.log(obj);
+      console.log(result); */
+
+      /* const obj = {
+        a: 1,
+        b: ['e', 'f', 'g'],
+        c: { h: 20 },
+        //json不能克隆方法
+        d: function () {},
+      };
+
+      //循环引用
+      obj.b.push(obj.c);
+      //   obj.c.j = obj.b;
+      //深拷贝
+      const result = deepClone1(obj);
+      //修改新数据的属性值 不会影响源数据
+      result.c.h = 200;
+
+      console.log(obj);
+      console.log(result); */
+    </script>
+  </body>
+</html>

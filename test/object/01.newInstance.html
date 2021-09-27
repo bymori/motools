@@ -1,0 +1,37 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: by_mori
+ * @Date: 2021-09-27 16:47:14
+ * @LastEditors: by_mori
+ * @LastEditTime: 2021-09-27 17:23:41
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>newInstance-自定义new</title>
+    <script src="../../src/object/newInstance.js"></script>
+  </head>
+  <body>
+    <script>
+      function Person(name, age) {
+        this.name = name;
+        this.age = age;
+        return {};
+        // return []
+        // return function (){}
+        // return 1
+        // return undefined
+      }
+      //调用 newInstance 函数创建对象
+      let obj = newInstance(Person, '张三', 18);
+      console.log(obj);
+
+      const p = new Person('tom', 12);
+      console.log(p);
+    </script>
+  </body>
+</html>

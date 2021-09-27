@@ -1,0 +1,31 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: by_mori
+ * @Date: 2021-09-27 17:28:41
+ * @LastEditors: by_mori
+ * @LastEditTime: 2021-09-27 17:28:42
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>自定义instanceof</title>
+    <script src="../../src/object/myInstanceOf.js"></script>
+  </head>
+  <body>
+    <script>
+      function Person(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+      const p = new Person('tom', 12);
+
+      console.log(myInstanceOf(p, Object), p instanceof Object);
+      console.log(myInstanceOf(p, Person), p instanceof Person);
+      console.log(myInstanceOf(p, Function), p instanceof Function);
+    </script>
+  </body>
+</html>

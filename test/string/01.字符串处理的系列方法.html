@@ -1,0 +1,35 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: by_mori
+ * @Date: 2021-09-27 18:55:29
+ * @LastEditors: by_mori
+ * @LastEditTime: 2021-09-27 20:07:41
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>字符串处理的系列方法</title>
+    <script src="../../src/string/index.js"></script>
+  </head>
+  <body>
+    <script>
+      let str = 'ioinn';
+      let str2 = 'mom';
+      let str3 = 'io小栈 沫沫-自定义工具函数库';
+
+      //测试代码
+      //1. 字符串倒序: reverseString(str)  生成一个倒序的字符串
+      console.log(reverseString(str));
+
+      //2. 字符串是否是回文: palindrome(str) 如果给定的字符串是回文，则返回 true ；否则返回 false
+      console.log(palindrome(str2));
+
+      //3. 截取字符串: truncate(str, num,[Omit]) 如果字符串的长度超过了num, 截取前面num长度部分, 并以 Omit 结束 默认为 ...
+      console.log(truncate(str3, 10));
+    </script>
+  </body>
+</html>
