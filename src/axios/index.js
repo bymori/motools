@@ -4,9 +4,9 @@
  * @Author: by_mori
  * @Date: 2021-09-27 22:12:54
  * @LastEditors: by_mori
- * @LastEditTime: 2021-09-27 22:43:27
+ * @LastEditTime: 2021-09-27 23:45:12
  */
-function axios({ url, method = 'GET', params = {}, data = {} }) {
+export function axios({ url, method = 'GET', params = {}, data = {} }) {
   // 处理method(转大写)
   method = method.toUpperCase();
   // 返回一个promise对象

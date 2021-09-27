@@ -4,9 +4,9 @@
  * @Author: by_mori
  * @Date: 2021-09-27 11:08:04
  * @LastEditors: by_mori
- * @LastEditTime: 2021-09-27 11:11:21
+ * @LastEditTime: 2021-09-27 23:42:27
  */
-function apply(fn, obj, args) {
+export function apply(fn, obj, args) {
   // 如果obj是undefined/null, this指定为window
   if (obj === undefined || obj === null) {
     // return fn(...args)

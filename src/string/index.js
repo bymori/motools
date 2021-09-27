@@ -4,9 +4,9 @@
  * @Author: by_mori
  * @Date: 2021-09-27 18:55:20
  * @LastEditors: by_mori
- * @LastEditTime: 2021-09-27 20:04:14
+ * @LastEditTime: 2021-09-27 23:58:47
  */
-function reverseString(str) {
+export function reverseString(str) {
   //将字符串转为数组
   //   let arr = str.split('');
   let arr = [...str];
@@ -17,7 +17,7 @@ function reverseString(str) {
   return s;
 }
 
-function palindrome(str) {
+export function palindrome(str) {
   return reverseString(str) === str;
 }
 

@@ -4,9 +4,9 @@
  * @Author: by_mori
  * @Date: 2021-09-27 16:47:07
  * @LastEditors: by_mori
- * @LastEditTime: 2021-09-27 17:24:42
+ * @LastEditTime: 2021-09-27 23:53:45
  */
-function newInstance(Fn, ...args) {
+export function newInstance(Fn, ...args) {
   // 创建一个空的object实例对象obj, 作为Fn的实例对象
   const obj = {};
   // 将Fn的prototype属性值赋值给obj的__proto__属性值

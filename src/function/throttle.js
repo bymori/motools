@@ -4,9 +4,9 @@
  * @Author: by_mori
  * @Date: 2021-09-27 11:29:14
  * @LastEditors: by_mori
- * @LastEditTime: 2021-09-27 11:39:58
+ * @LastEditTime: 2021-09-27 23:42:26
  */
-function throttle(callback, wait) {
+export function throttle(callback, wait) {
   //定义开始时间
   let start = 0;
   // 返回一个事件监听函数(也就是节流函数)

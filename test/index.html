@@ -1,0 +1,51 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: by_mori
+ * @Date: 2021-09-27 23:03:24
+ * @LastEditors: by_mori
+ * @LastEditTime: 2021-09-28 00:05:04
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="../dist/Mutils-utils.js"></script>
+  </head>
+  <body>
+    <script>
+      console.log(Mutils.reverseString('qwertryy'));
+      console.log(Mutils.chunk([12, 456, 3], 2));
+      console.log(
+        Mutils.map([12, 456, 3], (item) => {
+          return item * 10;
+        })
+      );
+
+      // eventBus
+      Mutils.eventBus.on('login', (data) => {
+        console.log(data + '用户已登录');
+      });
+      Mutils.eventBus.on('login', (data) => {
+        console.log(data + '登录数据已写入');
+      });
+      Mutils.eventBus.on('logout', (data) => {
+        console.log(data + '退出登录');
+      });
+
+      //触发事件
+      setTimeout(() => {
+        Mutils.eventBus.emit('login', '沫沫');
+      }, 100);
+
+      //解绑事件
+      // Mutils.eventBus.off('login');
+      // eventBus.off()
+
+      console.log(Mutils.eventBus);
+    </script>
+  </body>
+</html>

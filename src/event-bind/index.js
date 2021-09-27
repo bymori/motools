@@ -4,11 +4,11 @@
  * @Author: by_mori
  * @Date: 2021-09-27 20:08:40
  * @LastEditors: by_mori
- * @LastEditTime: 2021-09-27 20:59:08
+ * @LastEditTime: 2021-09-27 23:47:11
  */
 // 自定义事件名不能与 addEventListener 冲突 Cannot read properties of null (reading 'addEventListener')
 
-function addEventListene(el, type, fn, selector) {
+export function addEventListene(el, type, fn, selector) {
   //判断 element 类型
   if (typeof el === 'string') {
     el = document.querySelector(el);

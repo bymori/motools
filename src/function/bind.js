@@ -4,9 +4,10 @@
  * @Author: by_mori
  * @Date: 2021-09-27 11:12:21
  * @LastEditors: by_mori
- * @LastEditTime: 2021-09-27 11:21:06
+ * @LastEditTime: 2021-09-27 23:42:29
  */
-function bind(fn, obj, ...args) {
+import { call } from './call';
+export function bind(fn, obj, ...args) {
   // 返回一个新函数
   return (...args2) => {
     // 通过call调用原函数, 并指定this为obj, 实参为args与args2

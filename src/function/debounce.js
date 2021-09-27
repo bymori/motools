@@ -4,9 +4,9 @@
  * @Author: by_mori
  * @Date: 2021-09-27 11:45:42
  * @LastEditors: by_mori
- * @LastEditTime: 2021-09-27 11:59:01
+ * @LastEditTime: 2021-09-27 23:42:25
  */
-function debounce(callback, time) {
+export function debounce(callback, time) {
   let timeId = null;
   return function (e) {
     if (timeId !== null) {

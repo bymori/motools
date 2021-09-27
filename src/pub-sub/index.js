@@ -4,9 +4,9 @@
  * @Author: by_mori
  * @Date: 2021-09-27 21:21:04
  * @LastEditors: by_mori
- * @LastEditTime: 2021-09-27 22:10:55
+ * @LastEditTime: 2021-09-28 00:03:56
  */
-const PubSub = {
+export const PubSub = {
   //创建唯一id
   id: 1,
   //频道与回调保存的容器

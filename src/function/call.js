@@ -4,10 +4,10 @@
  * @Author: by_mori
  * @Date: 2021-09-27 10:55:25
  * @LastEditors: by_mori
- * @LastEditTime: 2021-09-27 10:58:03
+ * @LastEditTime: 2021-09-27 23:42:23
  */
 
-function call(Fn, obj, ...args) {
+export function call(Fn, obj, ...args) {
   //判断
   if (obj === undefined || obj === null) {
     obj = globalThis; //全局对象

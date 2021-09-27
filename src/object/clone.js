@@ -4,9 +4,9 @@
  * @Author: by_mori
  * @Date: 2021-09-27 17:52:34
  * @LastEditors: by_mori
- * @LastEditTime: 2021-09-27 18:15:14
+ * @LastEditTime: 2021-09-27 23:53:33
  */
-function clone1(target) {
+export function clone1(target) {
   //判断类型 {}  []  null
   if (typeof target === 'object' && target !== null) {
     if (Array.isArray(target)) {
@@ -19,7 +19,7 @@ function clone1(target) {
   }
 }
 
-function clone2(target) {
+export function clone2(target) {
   //判断类型 {}  []  null
   if (typeof target === 'object' && target !== null) {
     //创建一个容器

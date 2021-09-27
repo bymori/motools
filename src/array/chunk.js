@@ -4,9 +4,9 @@
  * @Author: by_mori
  * @Date: 2021-09-27 15:59:17
  * @LastEditors: by_mori
- * @LastEditTime: 2021-09-27 16:09:15
+ * @LastEditTime: 2021-09-27 23:25:09
  */
-function chunk(arr, size = 1) {
+export function chunk(arr, size = 1) {
   //判断传入数组长度1
   if (arr.length === 0) {
     return [];

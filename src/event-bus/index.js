@@ -4,15 +4,15 @@
  * @Author: by_mori
  * @Date: 2021-09-27 21:00:55
  * @LastEditors: by_mori
- * @LastEditTime: 2021-09-27 21:17:06
+ * @LastEditTime: 2021-09-27 23:59:30
  */
-const eventBus = {
+export const eventBus = {
   //保存类型与回调的容器
   callbacks: {},
 };
 
 //绑定事件
-eventBus.on = function (type, callback) {
+eventBus.on =function (type, callback) {
   //判断
   if (this.callbacks[type]) {
     //如果 callbacks 属性中存在该类型事件

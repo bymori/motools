@@ -4,9 +4,9 @@
  * @Author: by_mori
  * @Date: 2021-09-27 15:42:31
  * @LastEditors: by_mori
- * @LastEditTime: 2021-09-27 15:56:50
+ * @LastEditTime: 2021-09-27 23:37:14
  */
-function flatten1(arr) {
+export function flatten1(arr) {
   //声明空数组
   let result = [];
   //遍历数组
@@ -22,7 +22,7 @@ function flatten1(arr) {
   return result;
 }
 
-function flatten2(arr) {
+export function flatten2(arr) {
   let result = [...arr];
   while (result.some((item) => Array.isArray(item))) {
     result = [].concat(...result);

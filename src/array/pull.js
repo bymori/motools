@@ -4,9 +4,9 @@
  * @Author: by_mori
  * @Date: 2021-09-27 16:18:36
  * @LastEditors: by_mori
- * @LastEditTime: 2021-09-27 16:30:38
+ * @LastEditTime: 2021-09-27 23:37:51
  */
-function pull(arr, ...args) {
+export function pull(arr, ...args) {
   //声明空数组 保存删掉的元素
   const result = [];
   //遍历arr
@@ -25,6 +25,6 @@ function pull(arr, ...args) {
   return result;
 }
 
-function pullAll(arr, values) {
+export function pullAll(arr, values) {
   return pull(arr, ...values);
 }

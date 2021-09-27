@@ -4,9 +4,9 @@
  * @Author: by_mori
  * @Date: 2021-09-27 16:33:46
  * @LastEditors: by_mori
- * @LastEditTime: 2021-09-27 16:42:43
+ * @LastEditTime: 2021-09-27 23:36:43
  */
-function drop(arr, size) {
+export function drop(arr, size) {
   //过滤原数组 产生新数组
   /* return arr.filter((value, index) => {
     return index >= size;
@@ -14,7 +14,7 @@ function drop(arr, size) {
 
   return arr.filter((value, index) => index >= size);
 }
-function dropRight(arr, size) {
+export function dropRight(arr, size) {
   /* return arr.filter((value, index) => {
     return index <= arr.length - size;
   }); */

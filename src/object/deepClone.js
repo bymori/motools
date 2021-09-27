@@ -4,9 +4,9 @@
  * @Author: by_mori
  * @Date: 2021-09-27 18:17:07
  * @LastEditors: by_mori
- * @LastEditTime: 2021-09-27 18:53:11
+ * @LastEditTime: 2021-09-27 23:53:37
  */
-function deepClone1(target) {
+export function deepClone1(target) {
   //通过数据创建 json 格式的字符串
   let str = JSON.stringify(target);
   // 将 josn 字符串创建为js数据
@@ -14,7 +14,7 @@ function deepClone1(target) {
   return data;
 }
 
-function deepClone2(target) {
+export function deepClone2(target) {
   //检测数据类型
   if (target !== null && typeof target === 'object') {
     //创建一个容器
@@ -33,7 +33,7 @@ function deepClone2(target) {
   }
 }
 
-function deepClone3(target, map = new Map()) {
+export function deepClone3(target, map = new Map()) {
   //检测数据类型
   if (target !== null && typeof target === 'object') {
     //克隆数据前 判断数据之前是否被克隆过
@@ -59,7 +59,7 @@ function deepClone3(target, map = new Map()) {
   }
 }
 
-function deepClone4(target, map = new Map()) {
+export function deepClone4(target, map = new Map()) {
   //检测数据类型
   if (target !== null && typeof target === 'object') {
     //克隆数据前 判断数据之前是否被克隆过

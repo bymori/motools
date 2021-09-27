@@ -4,9 +4,9 @@
  * @Author: by_mori
  * @Date: 2021-09-27 15:20:18
  * @LastEditors: by_mori
- * @LastEditTime: 2021-09-27 15:40:14
+ * @LastEditTime: 2021-09-27 23:31:40
  */
-function concat(arr, ...args) {
+export function concat(arr, ...args) {
   //声明一个空数组
   const result = [...arr];
   //遍历数组
@@ -22,7 +22,7 @@ function concat(arr, ...args) {
   return result;
 }
 
-function slice(arr, begin, end) {
+export function slice(arr, begin, end) {
   // 如果当前数组是[], 直接返回[]
   if (arr.length === 0) {
     return [];

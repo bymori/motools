@@ -4,9 +4,9 @@
  * @Author: by_mori
  * @Date: 2021-09-27 14:45:15
  * @LastEditors: by_mori
- * @LastEditTime: 2021-09-27 15:18:35
+ * @LastEditTime: 2021-09-27 23:38:36
  */
-function unique(arr) {
+export function unique(arr) {
   //声明一个空数组
   const result = [];
   arr.forEach((item) => {
@@ -20,7 +20,7 @@ function unique(arr) {
   return result;
 }
 
-function unique2(arr) {
+export function unique2(arr) {
   //声明一个空数组
   const result = [];
   //声明空对象
@@ -36,7 +36,7 @@ function unique2(arr) {
   return result;
 }
 
-function unique3(arr) {
+export function unique3(arr) {
   /* //将数组转化为集合
   let set = new Set(arr);
   let array = [...set];

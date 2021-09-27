@@ -4,9 +4,9 @@
  * @Author: by_mori
  * @Date: 2021-09-27 16:10:52
  * @LastEditors: by_mori
- * @LastEditTime: 2021-09-27 16:16:45
+ * @LastEditTime: 2021-09-27 23:35:56
  */
-function difference(arr1, arr2 = []) {
+export function difference(arr1, arr2 = []) {
   //判断传入参数
   if (arr1.length === 0) {
     return [];

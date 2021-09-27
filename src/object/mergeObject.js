@@ -4,9 +4,9 @@
  * @Author: by_mori
  * @Date: 2021-09-27 17:36:38
  * @LastEditors: by_mori
- * @LastEditTime: 2021-09-27 17:48:05
+ * @LastEditTime: 2021-09-27 23:53:40
  */
-function mergeObject(...objs) {
+export function mergeObject(...objs) {
   const result = {};
   // 遍历objs
   objs.forEach((obj) => {

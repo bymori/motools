@@ -4,9 +4,9 @@
  * @Author: by_mori
  * @Date: 2021-09-27 12:03:35
  * @LastEditors: by_mori
- * @LastEditTime: 2021-09-27 14:42:15
+ * @LastEditTime: 2021-09-27 23:33:02
  */
-function map(arr, callback) {
+export function map(arr, callback) {
   //声明一个空数组
   let result = [];
   //遍历数组
@@ -27,7 +27,7 @@ function map(arr, callback) {
  * @param {*} initValue
  * @return {*}
  */
-function reduce(arr, callback, initValue) {
+export function reduce(arr, callback, initValue) {
   //声明变量
   let result = initValue;
   for (let i = 0; i < arr.length; i++) {
@@ -38,7 +38,7 @@ function reduce(arr, callback, initValue) {
   return result;
 }
 
-function filter(arr, callback) {
+export function filter(arr, callback) {
   //声明一个空数组
   let result = [];
   //遍历数组
@@ -53,7 +53,7 @@ function filter(arr, callback) {
   return result;
 }
 
-function find(arr, callback) {
+export function find(arr, callback) {
   for (let i = 0; i < arr.length; i++) {
     //执行回调
     let res = callback(arr[i], i);
@@ -65,7 +65,7 @@ function find(arr, callback) {
   return undefined;
 }
 
-function findIndex(arr, callback) {
+export function findIndex(arr, callback) {
   for (let i = 0; i < arr.length; i++) {
     //执行回调
     let res = callback(arr[i], i);
@@ -77,7 +77,7 @@ function findIndex(arr, callback) {
   return -1;
 }
 
-function every(arr, callback) {
+export function every(arr, callback) {
   //遍历数组
   for (let i = 0; i < arr.length; i++) {
     //执行回调
@@ -88,7 +88,7 @@ function every(arr, callback) {
   return true;
 }
 
-function some(arr, callback) {
+export function some(arr, callback) {
   //遍历数组
   for (let i = 0; i < arr.length; i++) {
     //执行回调

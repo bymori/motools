@@ -4,9 +4,9 @@
  * @Author: by_mori
  * @Date: 2021-09-27 17:28:25
  * @LastEditors: by_mori
- * @LastEditTime: 2021-09-27 17:36:04
+ * @LastEditTime: 2021-09-27 23:53:42
  */
-function myInstanceOf(obj, Fn) {
+export function myInstanceOf(obj, Fn) {
   //获取函数的显示原型
   let prototype = Fn.prototype;
   //获取obj的隐式原型对象
