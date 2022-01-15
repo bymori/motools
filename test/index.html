@@ -4,7 +4,7 @@
  * @Author: by_mori
  * @Date: 2021-09-27 23:03:24
  * @LastEditors: by_mori
- * @LastEditTime: 2021-09-28 00:05:04
+ * @LastEditTime: 2021-09-28 11:50:23
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -14,38 +14,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="../dist/Mutils-utils.js"></script>
+    <style>
+      body {
+        height: 2000px;
+        background: linear-gradient(#125, #eae);
+      }
+      #container {
+        width: 100%;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+        color: #fff;
+        background-color: #444;
+        font-size: 30px;
+      }
+    </style>
   </head>
   <body>
+    <div id="container"></div>
     <script>
-      console.log(Mutils.reverseString('qwertryy'));
-      console.log(Mutils.chunk([12, 456, 3], 2));
-      console.log(
-        Mutils.map([12, 456, 3], (item) => {
-          return item * 10;
-        })
+      window.addEventListener(
+        'scroll',
+        Mutils.throttle(function (e) {
+          //   console.log(e);
+          console.log(Date.now());
+        }, 500)
       );
 
-      // eventBus
-      Mutils.eventBus.on('login', (data) => {
-        console.log(data + '用户已登录');
-      });
-      Mutils.eventBus.on('login', (data) => {
-        console.log(data + '登录数据已写入');
-      });
-      Mutils.eventBus.on('logout', (data) => {
-        console.log(data + '退出登录');
-      });
+      // 第四版
+function debounce(func, wait, immediate) {
 
-      //触发事件
-      setTimeout(() => {
-        Mutils.eventBus.emit('login', '沫沫');
-      }, 100);
+    var timeout;
+    console.log('1',timeout);
 
-      //解绑事件
-      // Mutils.eventBus.off('login');
-      // eventBus.off()
+    return function () {
+        var context = this;
+        var args = arguments;
 
-      console.log(Mutils.eventBus);
+        if (timeout) clearTimeout(timeout);
+        if (immediate) {
+            // 如果已经执行过，不再执行
+            var callNow = !timeout;
+            timeout = setTimeout(function(){
+                timeout = null;
+                console.log('3',timeout);
+            }, wait)
+            if (callNow) func.apply(context, args)
+        }
+        else {
+          console.log('4',timeout);
+            timeout = setTimeout(function(){
+                func.apply(context, args)
+            }, wait);
+            
+        }
+    }
+}
+
+
+      var count = 1;
+      var container = document.getElementById('container');
+      function getUserAction() {
+        container.innerHTML = count++;
+      }
+
+      container.onmousemove = debounce(getUserAction, 1000, true)
     </script>
   </body>
 </html>

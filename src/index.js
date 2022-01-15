@@ -4,18 +4,26 @@
  * @Author: by_mori
  * @Date: 2021-09-27 23:01:09
  * @LastEditors: by_mori
- * @LastEditTime: 2021-09-28 00:04:26
+ * @LastEditTime: 2022-01-15 23:04:48
  */
 
 //array
 export { chunk } from './array/chunk';
 export { concat, slice } from './array/concat';
-export {map,reduce,filter,find,findIndex,every,some} from './array/declares';
+export {
+  map,
+  reduce,
+  filter,
+  find,
+  findIndex,
+  every,
+  some,
+} from './array/declares';
 export { difference } from './array/difference';
-export { drop,dropRight } from './array/drop';
-export { flatten1,flatten2 } from './array/flatten';
-export { pull,pullAll } from './array/pull';
-export { unique,unique2,unique3 } from './array/unique';
+export { drop, dropRight } from './array/drop';
+export { flatten1, flatten2 } from './array/flatten';
+export { pull, pullAll } from './array/pull';
+export { unique, unique2, unique3 } from './array/unique';
 
 //axios
 export { axios } from './axios/index';
@@ -34,8 +42,13 @@ export { debounce } from './function/debounce';
 export { throttle } from './function/throttle';
 
 // object
-export { clone1,clone2 } from './object/clone';
-export { deepClone1,deepClone2,deepClone3,deepClone4 } from './object/deepClone';
+export { clone1, clone2 } from './object/clone';
+export {
+  deepClone1,
+  deepClone2,
+  deepClone3,
+  deepClone4,
+} from './object/deepClone';
 export { mergeObject } from './object/mergeObject';
 export { myInstanceOf } from './object/myInstanceOf';
 export { newInstance } from './object/newInstance';
@@ -44,4 +57,7 @@ export { newInstance } from './object/newInstance';
 export { PubSub } from './pub-sub/index';
 
 // string
-export { reverseString,palindrome } from './string/index';
+export { reverseString, palindrome } from './string/index';
+
+// event
+export { runOnKeys } from './event/Keyboard';
