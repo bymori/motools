@@ -4,7 +4,7 @@
  * @Author: by_mori
  * @Date: 2021-09-27 11:29:14
  * @LastEditors: by_mori
- * @LastEditTime: 2022-01-15 23:07:08
+ * @LastEditTime: 2022-01-16 14:13:38
  */
 // export function throttle(callback, wait) {
 //   //定义开始时间
@@ -20,7 +20,16 @@
 //     }
 //   };
 // }
-
+/**
+ * @name:节流函数
+ * @test: test font
+ * @msg:
+ * @param {Function} fn 传入需要执行的函数
+ * @param {Number} interval 间隔时间
+ * @param {Boolean} options.leading 是否开始立即执行一次
+ * @param {Boolean} options.trailing 结束后执行一次
+ * @return {Function}
+ */
 export function throttle(
   fn,
   interval,

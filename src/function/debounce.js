@@ -4,7 +4,7 @@
  * @Author: by_mori
  * @Date: 2021-09-27 11:45:42
  * @LastEditors: by_mori
- * @LastEditTime: 2022-01-15 23:06:45
+ * @LastEditTime: 2022-01-16 14:15:33
  */
 // export function debounce(callback, time) {
 //   let timeId = null;
@@ -19,8 +19,17 @@
 //     }, time);
 //   };
 // }
-
-export function debounce(fn, delay, immediate = false, resultCallback) {
+/**
+ * @name:防抖函数
+ * @test: test font
+ * @msg:
+ * @param {Function} fn 执行函数
+ * @param {Number} delay 时间
+ * @param {Boolean} immediate 是否立即执行
+ * @param {Function} resultCallback 结束回调函数
+ * @return {Function}
+ */
+export function debounce(fn, delay = 200, immediate = false, resultCallback) {
   // 1.定义一个定时器, 保存上一次的定时器
   let timer = null;
   let isInvoke = false;

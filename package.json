@@ -1,6 +1,6 @@
 {
   "name": "moriutils",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "by_mori",
   "description": "自定义工具函数库\r ### 函数相关\r 1. call() & apply() & bind()\r 2. 函数节流与函数防抖\r ### 数组\r ### 对象\r ### 字符串\r ### DOM事件监听(带委托)\r ### ajax请求函数\r ### 事件总线\r ### 消息定义与发布\r ### Promise",
   "keywords": [
@@ -29,7 +29,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "GPL",
   "dependencies": {
     "webpack": "^5.54.0",
     "webpack-cli": "^4.8.0"
