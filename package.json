@@ -1,23 +1,9 @@
 {
   "name": "moriutils",
   "version": "1.1.0",
-  "author": "by_mori",
+  "author": "",
   "description": "自定义工具函数库\r ### 函数相关\r 1. call() & apply() & bind()\r 2. 函数节流与函数防抖\r ### 数组\r ### 对象\r ### 字符串\r ### DOM事件监听(带委托)\r ### ajax请求函数\r ### 事件总线\r ### 消息定义与发布\r ### Promise",
-  "keywords": [
-    "motools",
-    "tools",
-    "mo",
-    "util",
-    "utils",
-    "array",
-    "object",
-    "ajax",
-    "function",
-    "string",
-    "axios",
-    "event-bus",
-    "pub-sub"
-  ],
+  "keywords": [],
   "main": "./dist/Mutils-utils.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -27,8 +13,6 @@
     "type": "git",
     "url": "https://github.com/bymori/motools"
   },
-  "keywords": [],
-  "author": "",
   "license": "GPL",
   "dependencies": {
     "webpack": "^5.54.0",
