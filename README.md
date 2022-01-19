@@ -1,4 +1,10 @@
-# motools
+# moriutils
+[![npm version](https://img.shields.io/npm/v/moriutils.svg?style=flat-square)](https://github.com/bymori/motools)
+[![install size](https://packagephobia.com/badge?p=moriutils)](https://packagephobia.com/result?p=moriutils)
+[![npm downloads](https://img.shields.io/npm/dm/moriutils.svg?style=flat-square)](https://github.com/bymori/motools)
+[![NPM license](https://img.shields.io/npm/l/moriutils.svg?style=flat-square)](https://github.com/bymori/motools)
+
+moriutils for working with DOM, Window, Screen and etc.
 自定义工具函数库
 ### 函数相关
 1. call() & apply() & bind()

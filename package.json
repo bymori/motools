@@ -1,19 +1,36 @@
 {
   "name": "moriutils",
-  "version": "1.1.1",
-  "author": "",
-  "description": "自定义工具函数库\r ### 函数相关\r 1. call() & apply() & bind()\r 2. 函数节流与函数防抖\r ### 数组\r ### 对象\r ### 字符串\r ### DOM事件监听(带委托)\r ### ajax请求函数\r ### 事件总线\r ### 消息定义与发布\r ### Promise",
-  "keywords": [],
+  "version": "1.1.2",
+  "description": "moriutils for working with DOM, Window, Screen and etc.",
   "main": "./dist/Mutils-utils.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build:watch": "webpack --watch"
+    "build:watch": "webpack --watch",
+    "build": "webpack && npm publish"
+  },
+  "author": "by_mori",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bymori/motools/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bymori/motools"
+    "url": "https://github.com/bymori/motools.git"
   },
-  "license": "GPL",
+  "homepage": "https://github.com/bymori/motools",
+  "keywords": [
+    "utils",
+    "mori",
+    "call",
+    "debounce",
+    "throttle",
+    "runOnKeys",
+    "axios",
+    "difference",
+    "array/declares",
+    "flatten",
+    "pull",
+    "chunk"
+  ],
   "dependencies": {
     "webpack": "^5.54.0",
     "webpack-cli": "^4.8.0"
